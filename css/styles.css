@@ -1,0 +1,52 @@
+body {
+  background-image: url(..//img/dice.jpg);
+}
+
+.jumbotron {
+  color: blue;
+  background-color: indigo;
+  border: 3px solid purple;
+  text-decoration-color: blue;
+}
+
+img {
+  margin-top: 10px;
+  float: center;
+}
+
+#DisplayPlayer1 {
+  background-color:green ;
+  border: 2px solid pink;
+  margin: auto;
+  padding: inherit;
+  border: 15px solid orange;
+  float: left;
+}
+
+#DisplayPlayer2 {
+  background-color: rgb(0, 100, 5);
+  border: 15px solid yellow;
+  float:right;
+  margin: auto;
+  padding: inherit;
+
+}
+
+h1 {
+  color: blue;
+font-style: italic;
+}
+#Display {
+  color:orange;
+}
+.rosemary {
+  float:right;
+}
+#rose{
+  text color: violet;
+}
+body{
+  margin: 10px;
+  padding: 40px;
+  border: 20px solid green;
+}

@@ -1,38 +1,62 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
-    <title>PIG DICE</title>
+    <title>Pig Dice</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/scripts.js"></script>
   </head>
   <body>
-    <h1><em>PIG DICE</em></h1>
+
     <div class="container">
-        <form id="person1">
-          <div class="form-group">
-            <label for="person1name">person1 name</label>
-            <input required class="person1 name" type="text">
-            <button id ="start" class="btn-btn sucess">start</button>
-          </div>
-        </form>
-        <br>
-        <form id="person2">
-          <div class="form group">
-            <label for="person2name">person2 name</label>
-            <input type="text" required class="person2 name">
-            <button id="start" class=" btn-btn sucess">start</button>
-
-          </div>
-        </form>
-         </div>
+      <div class="jumbotron">
+        <h1>Pig Dice</h1>
       </div>
-      <div class="col-md-6">
+      <form id="pigForm" class="form-group" action="index.html" method="post">
+        <div class="player-group">
+          <label class="player-group">Enter Player1</label>
+          <input id="rose" type="text">
+        </div>
+        <br>
+        <div class="playersName">
+          <label class="player-group">Enter Player2</label>
+          <input id="rose" type="text">
+        </div>
+        <button class="bg-info" name="button">Submit</button>
+      </form>
+
+      <br>
+      <div id="Display">
+        <div class="col-md-4" id="DisplayPlayer1">
+          <div id="Player1Button">
+          <h2>Player <span class="PlayerStatus" class="Display"></span>1</h2>
+          <h2>Score: <span id="turnScore" class="Display turnScore"></span></h2>
+          <h2> Result: <span id="rollResult" class="Display rollResult"></span></h2>
+
+          <button type="button" class="btn btn-warning btn-lg rollPig">Roll!</button>
+          <button type="button" class="btn btn-primary btn-lg holdPig">Stop rolling</button>
+          </div>
+        </div>
+
+<div id="rosemary">
+        <div class="col-md-4" id="DisplayPlayer2">
+          <div id="Player2Button">
+          <h2>Player<span class="PlayerStatus"></span>2</h2>
+          <h2>Score: <span id="turnScore" class="Display turnScore"></span></h2>
+          <h2>Result: <span id="rollResult" class="Display rollResult"></span></h2>
 
 
+          <button type="button" class="btn btn-warning btn-lg rollPig">Roll</button>
+          <button type="button" class="btn btn-primary btn-lg holdPig">Stop rolling</button>
         </div>
 
       </div>
+</div>
 
+
+      </div>
     </div>
-
   </body>
 </html>
