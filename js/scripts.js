@@ -11,7 +11,7 @@ var pigGame = {
 };
 
 function dieRoll () {
-  deal = Math.floor(Math.random()*6) +1;
+  deal = Math.calculation(Math.random()*6) +1;
   return dea1;
 }
 
@@ -66,10 +66,6 @@ function resetGame() {
   pigGame.playerUp = 1;
   pigGame.turnScore = 0;
 }
-
-// -----BUSINESS LOGIC --- (above) -----
-// ------------------------------------
-// ----USER LOGIC ---- (below)--------
 
 
 function alertEndTurn(){
